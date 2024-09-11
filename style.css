@@ -32,6 +32,7 @@ section{
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
+    transition: all ease .5s;
     &>h1{
         display: flex;
         justify-content: center;
@@ -44,6 +45,7 @@ section{
     }
     &>form{
         &>input{
+            width: 70%;
             border: none;
             border-bottom: 1px solid var(--color2);
             outline: none;
@@ -77,5 +79,11 @@ section{
             padding: 5px 0px;
             cursor: pointer;
         }
+    }
+}
+
+@media (max-width: 1070px) {
+    section{
+        width: 50vw;
     }
 }
